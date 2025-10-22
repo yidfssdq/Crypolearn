@@ -1,73 +1,114 @@
-# Welcome to your Lovable project
+<p align="center">
+  <a href="https://swc.rs/">
+    <img alt="swc" src="https://raw.githubusercontent.com/swc-project/logo/master/swc.png" width="546">
+  </a>
+</p>
 
-## Project info
+<p align="center">
+  Make the web (development) faster.
+</p>
 
-**URL**: https://lovable.dev/projects/d3828276-025b-4751-902e-fda548eba505
+<p align="center">
+  <a href="https://www.npmjs.com/package/@swc/core">
+    <img alt="downloads (@swc/core)" src="https://img.shields.io/npm/dm/@swc/core?label=downloads%20%28%40swc%2Fcore%29">
+  </a>
+  <a href="https://www.npmjs.com/package/@swc/counter?activeTab=dependents">
+    <img alt="downloads (3rd party)" src="https://img.shields.io/npm/dm/@swc/counter?label=downloads%20%283rd%20party%29">
+  </a>
+</p>
+<p align="center">
+  <a href="https://crates.io/crates/swc_ecma_parser">
+    <img alt="undefined" src="https://img.shields.io/crates/d/swc_ecma_parser.svg?label=crates.io%20downloads">
+  </a>
+  <a href="https://github.com/swc-project/swc/releases/latest">
+    <img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/swc-project/swc">
+  </a>
+</p>
 
-## How can I edit this code?
+<p align="center">
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/swc-project/swc">
+  <a href="https://github.com/swc-project/swc/blob/main/package.json#L22">
+    <img alt="node-current (scoped)" src="https://img.shields.io/node/v/@swc/core">
+  </a>
+</p>
 
-There are several ways of editing your application.
+<p align="center">
+  <a href="https://discord.com/invite/GnHbXTdZz6">
+    <img alt="Discord" src="https://img.shields.io/discord/889779439272075314">
+  </a>
+</p>
 
-**Use Lovable**
+SWC (stands for `Speedy Web Compiler`) is a super-fast TypeScript / JavaScript compiler written in Rust. It's a library for Rust and JavaScript at the same time. If you are using SWC from Rust, see [rustdoc](https://rustdoc.swc.rs/swc/) and for most users, your entry point for using the library will be [parser](https://rustdoc.swc.rs/swc_ecma_parser/).
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d3828276-025b-4751-902e-fda548eba505) and start prompting.
+Also, SWC tries to ensure that
 
-Changes made via Lovable will be committed automatically to this repo.
+> If you select the latest version of each crates, it will work
 
-**Use your preferred IDE**
+for rust users.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+MSRV of crates is currently `1.73`.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+To update all SWC crates you use, you can run `curl https://raw.githubusercontent.com/swc-project/swc/main/scripts/update-all-swc-crates.sh | bash -s`. This script will update all dependencies to the latest version and run `cargo build` to ensure that everything works.
+Note that you need
 
-Follow these steps:
+-   `jq`
+-   `cargo upgrade`
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+command to run the script.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Supported Node Versions:
 
-# Step 3: Install the necessary dependencies.
-npm i
+-   Node v10+ for usage
+-   Node v20+ for development
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+If you are using SWC from JavaScript, please refer to [docs on the website](https://swc.rs/docs/installation/).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+# Documentation
 
-**Use GitHub Codespaces**
+Check out the documentation [in the website](https://swc.rs/docs/installation/).
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Features
 
-## What technologies are used for this project?
+Please see [comparison with babel](https://swc.rs/docs/migrating-from-babel).
 
-This project is built with:
+# Performance
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Please see [benchmark results](https://swc.rs/docs/benchmark-transform) on the website.
 
-## How can I deploy this project?
+# Supporting development
 
-Simply open [Lovable](https://lovable.dev/projects/d3828276-025b-4751-902e-fda548eba505) and click on Share -> Publish.
+<h2 align="center">Supporting swc</h2>
 
-## Can I connect a custom domain to my Lovable project?
+## Star History
 
-Yes, you can!
+[![Star History Chart](https://api.star-history.com/svg?repos=swc-project/swc&type=Timeline)](https://www.star-history.com/#swc-project/swc&Timeline)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Powered by
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+[![JetBrains logo.](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://jb.gg/OpenSourceSupport)
+
+## Sponsors
+
+<p align="center">
+  <a href="https://opencollective.com/swc">
+    <img src="https://raw.githubusercontent.com/swc-project/swc-sponsor-images/main/sponsors.svg" alt="Sponsors">
+  </a>
+</p>
+
+SWC is a community-driven project, and is maintained by a group of [volunteers](https://swc.rs/docs/team). If you'd like to help support the future of the project, please consider:
+
+-   Giving developer time on the project. (Message us on [Discord](https://discord.gg/GnHbXTdZz6) (preferred) or [Github discussions](https://github.com/swc-project/swc/discussions) for guidance!)
+-   Giving funds by becoming a sponsor (see https://opencollective.com/swc)!
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). You may also find the architecture
+documentation useful ([ARCHITECTURE.md](ARCHITECTURE.md)).
+
+## License
+
+SWC is primarily distributed under the terms of the Apache License (Version 2.0).
+
+See [LICENSE](LICENSE) for details.
